@@ -1,2 +1,3 @@
 FROM ubuntu:latest
+RUN apt-get update && apt-get install -y wget
 RUN wget https://dl.minio.io/client/mc/release/linux-amd64/mc && chmod +x mc && mv mc /usr/local/bin
