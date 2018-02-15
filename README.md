@@ -10,3 +10,4 @@ cf|Cloud Foundry Client
 mc|Minio Client
 om|Ops Manager Client
 mysql|MySQL Client
+bosh|BOSH Client
