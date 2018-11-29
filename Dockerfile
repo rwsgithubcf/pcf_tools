@@ -8,4 +8,4 @@ RUN curl -L "https://github.com/pivotal-cf/om/releases/download/${OM_CLI_VERSION
 ENV BOSH_CLI_VERSION "2.0.48" # BOSH CLI
 RUN curl -L "https://s3.amazonaws.com/bosh-cli-artifacts/bosh-cli-${BOSH_CLI_VERSION}-linux-amd64" -o bosh && chmod +x bosh && mv bosh /usr/local/bin
 RUN apt-get install -y python-pip python-dev build-essential && pip install --upgrade pip
-RUN pip install awscli --upgrade --user && aws --version
+RUN pip install awscli --upgrade --user && awscli --version
