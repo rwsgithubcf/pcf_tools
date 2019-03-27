@@ -9,3 +9,5 @@ ENV BOSH_CLI_VERSION "2.0.48" # BOSH CLI
 RUN curl -L "https://s3.amazonaws.com/bosh-cli-artifacts/bosh-cli-${BOSH_CLI_VERSION}-linux-amd64" -o bosh && chmod +x bosh && mv bosh /usr/local/bin
 RUN apt-get install -y python-pip python-dev build-essential && pip install --upgrade pip
 RUN pip install awscli --upgrade --user
+RUN wget https://github.com/orange-cloudfoundry/cf-plugin-bg-restage/releases/download/v1.1.0/cf-plugin-bg-restage_linux_amd64 && chmod +x cf-plugin-bg-restage_linux_amd64 && mv cf-plugin-bg-restage_linux_amd64 /usr/local/bin
+RUN cf install-plugin /usr/local/bin/cf-plugin-bg-restage_linux_amd64 -f
