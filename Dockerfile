@@ -11,3 +11,4 @@ ENV BOSH_CLI_VERSION "2.0.48" # BOSH CLI
 RUN curl -L "https://s3.amazonaws.com/bosh-cli-artifacts/bosh-cli-${BOSH_CLI_VERSION}-linux-amd64" -o bosh && chmod +x bosh && mv bosh /usr/local/bin
 RUN apt-get install -y ruby-full python3 python3-pip && pip3 install awscli --upgrade
 RUN wget https://releases.hashicorp.com/terraform/0.11.14/terraform_0.11.14_linux_amd64.zip && unzip terraform_0.11.14_linux_amd64.zip && mv terraform /usr/local/bin
+RUN wget https://github.com/mikefarah/yq/releases/download/2.2.1/yq_linux_amd64 && chmod +x yq_linux_amd64 && mv yq_linux_amd64 /usr/local/bin/yq
