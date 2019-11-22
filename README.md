@@ -16,3 +16,4 @@ bosh|BOSH Client
 aws|AWS Client
 terraform|Terraform
 yq|YAML processor
+yamllint|A linter for YAML files
