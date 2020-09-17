@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-RUN apt-get update && apt-get install -y wget curl jq git mysql-client unzip yamllint ldap-utils
+RUN apt-get update && apt-get install -y wget curl jq git mysql-client unzip yamllint ldap-utils postgresql-client
 ENV CF_CLI_VERSION "6.51.0"
 RUN curl -L "https://cli.run.pivotal.io/stable?release=linux64-binary&version=${CF_CLI_VERSION}" | tar -xz -C /usr/local/bin
 RUN wget https://github.com/orange-cloudfoundry/cf-plugin-bg-restage/releases/download/v1.1.0/cf-plugin-bg-restage_linux_amd64 -O /usr/local/bin/cf-plugin-bg-restage && chmod +x /usr/local/bin/cf-plugin-bg-restage
