@@ -8,6 +8,8 @@ curl|Transfer a URL
 jq|Command-line JSON processor
 git|Git Client
 mysql|MySQL Client
+psql|PostgreSQL Client
+nc|netcat
 unzip|List, test and extract compressed files in a ZIP archive
 cf|Cloud Foundry Client
 mc|Minio Client
