@@ -13,3 +13,4 @@ RUN apt-get install -y ruby-full python3 python3-pip && pip3 install awscli --up
 RUN wget https://releases.hashicorp.com/terraform/0.11.14/terraform_0.11.14_linux_amd64.zip && unzip terraform_0.11.14_linux_amd64.zip && mv terraform /usr/local/bin
 ENV YQ_VERSION "2.2.1"
 RUN wget https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64 -O /usr/local/bin/yq && chmod +x /usr/local/bin/yq
+RUN curl -sSL "https://github.com/buildpacks/pack/releases/download/v0.13.1/pack-v0.13.1-linux.tgz" | tar -C /usr/local/bin --no-same-owner -xzv pack
