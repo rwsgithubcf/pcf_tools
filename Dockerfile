@@ -16,6 +16,6 @@ RUN wget https://github.com/mikefarah/yq/releases/download/${V_YQ}/yq_linux_amd6
 ENV V_PACK "0.13.1"
 RUN curl -sSL "https://github.com/buildpacks/pack/releases/download/v${V_PACK}/pack-v${V_PACK}-linux.tgz" | tar -C /usr/local/bin --no-same-owner -xzv pack
 ENV V_CREDHUB "2.8.0"
-RUN curl -sSL "https://github.com/cloudfoundry-incubator/credhub-cli/releases/download/${V_CREDHUB}/credhub-linux-${V_CREDHUB}.tgz" | tar -C ~/usr/local/bin --no-same-owner -xzv ./credhub
+RUN curl -sSL "https://github.com/cloudfoundry-incubator/credhub-cli/releases/download/${V_CREDHUB}/credhub-linux-${V_CREDHUB}.tgz" | tar -C /usr/local/bin --no-same-owner -xzv ./credhub
 ENV V_BBR "1.8.0"
 RUN wget https://github.com/cloudfoundry-incubator/bosh-backup-and-restore/releases/download/v${V_BBR}/bbr-${V_BBR}-linux-amd64 -O /usr/local/bin/bbr && chmod +x /usr/local/bin/bbr
