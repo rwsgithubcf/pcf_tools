@@ -22,3 +22,4 @@ yamllint| |A linter for YAML files
 pack|0.13.1|Pack Client
 credhub|2.8.0|CredHub Client
 bbr|1.8.0|BOSH Backup & Restore Client
+sshpass| |SSHPASS
