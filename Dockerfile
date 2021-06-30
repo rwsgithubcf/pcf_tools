@@ -7,7 +7,7 @@ RUN cf install-plugin /usr/local/bin/cf-plugin-bg-restage -f
 RUN wget https://dl.minio.io/client/mc/release/linux-amd64/mc -O /usr/local/bin/mc && chmod +x /usr/local/bin/mc
 ENV V_OM "6.4.0"
 RUN wget "https://github.com/pivotal-cf/om/releases/download/${V_OM}/om-linux-${V_OM}" -O /usr/local/bin/om && chmod +x /usr/local/bin/om
-ENV V_BOSH "6.4.0"
+ENV V_BOSH "6.4.4"
 RUN wget https://github.com/cloudfoundry/bosh-cli/releases/download/v${V_BOSH}/bosh-cli-${V_BOSH}-linux-amd64 -O /usr/local/bin/bosh && chmod +x /usr/local/bin/bosh
 RUN apt-get install -y ruby-full python3 python3-pip && pip3 install awscli --upgrade
 RUN wget https://releases.hashicorp.com/terraform/0.11.14/terraform_0.11.14_linux_amd64.zip && unzip terraform_0.11.14_linux_amd64.zip && mv terraform /usr/local/bin
