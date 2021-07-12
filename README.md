@@ -14,7 +14,7 @@ unzip| |List, test and extract compressed files in a ZIP archive
 cf|6.53.0|Cloud Foundry Client
 mc| |Minio Client
 om|6.4.0|Ops Manager Client
-bosh|6.4.0|BOSH Client
+bosh|6.4.4|BOSH Client
 aws| |AWS Client
 terraform|0.11.14|Terraform
 yq|2.2.1|YAML processor
